@@ -76,10 +76,10 @@ st.write("")
 st.write("")
 
 
-nifty_50 = pd.read_csv(f"{cwd}\\index_data\\ind_nifty50list.csv")
-nifty_auto = pd.read_csv(f"{cwd}\\index_data\\ind_niftyautolist.csv")
-nifty_bank = pd.read_csv(f"{cwd}\\index_data\\ind_niftybanklist.csv")
-nifty_it = pd.read_csv(f"{cwd}\\index_data\\ind_niftyitlist.csv")
+nifty_50 = pd.read_csv(f"{cwd}/index_data/ind_nifty50list.csv")
+nifty_auto = pd.read_csv(f"{cwd}/index_data/ind_niftyautolist.csv")
+nifty_bank = pd.read_csv(f"{cwd}/index_data/ind_niftybanklist.csv")
+nifty_it = pd.read_csv(f"{cwd}/index_data/ind_niftyitlist.csv")
 
 def print_generator(i):
     def return_file(i):
@@ -159,7 +159,7 @@ def get_file_data(directory):
     for file in list_of_files:
         if '.csv' in file:
             file_names.append(file)
-            csv_path.append(f'{directory}\\{file}')
+            csv_path.append(f'{directory}/{file}')
             count+=1
     return count,file_names,csv_path
 
